@@ -1,3 +1,6 @@
-export interface HashingFunctions {
-  hash: (str: string | Buffer) => number;
+export interface HashingFunctions<Type> {
+  /**
+   * Should accept a string and return an id
+   */
+  hash: (key: Type) => number;
 }

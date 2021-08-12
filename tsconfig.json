@@ -17,6 +17,10 @@
       "skipLibCheck": true,
       "lib": [
         "esnext"
-      ]
-    }
+      ],
+      "outDir": "dist"
+    },
+    "include": [
+        "lib/*.ts"
+    ]
   }

@@ -1,33 +1,50 @@
+import Decimal from "decimal.js";
 import { HashingFunctions } from "./types";
-import { BitArray } from "./utils";
+import { BitArray, getError, getK } from "./utils";
 
-export class BloomFilter {
+export class BloomFilter<Type = string> {
   k: number;
   m: number;
   n: number;
   bitArray: BitArray;
-  hashingFunctions: Array<HashingFunctions>;
+  hashingFunctions: Array<HashingFunctions<Type>>;
 
   constructor(
     m: number,
     n: number,
-    permittedError: number = 0.15,
-    hashingFunctions: Array<HashingFunctions>
+    permittedError: Decimal = new Decimal(0.015),
+    hashingFunctions: Array<HashingFunctions<Type>>
   ) {
     this.m = m;
     this.n = n;
-    this.k = (m / n) * Math.log(2);
-    const error = Math.pow(1 - Math.exp((-this.k * n) / m), this.k);
-    if (error > permittedError)
+    this.k = getK(m, n);
+    const error = getError(this.k, m, n);
+    if (error.gt(permittedError))
       throw new Error(
-        `Permitted error: ${permittedError}, found error: ${error}`
+        `Permitted error: ${permittedError.toString()}, found error: ${error.toString()}`
       );
     this.bitArray = new BitArray(m);
-    if (hashingFunctions.length > Math.floor(this.k)) {
+    if (hashingFunctions.length > this.k) {
       throw new Error("Too many hashing functions");
     }
     this.hashingFunctions = hashingFunctions;
   }
 
-  add(value: string | Buffer): void {}
+  add(value: Type): void {
+    for (const hf of this.hashingFunctions) {
+      const id = hf.hash(value);
+      this.bitArray.set(id);
+    }
+  }
+
+  exists(value: Type): boolean {
+    let exists = true;
+    for (const hf of this.hashingFunctions) {
+      const id = hf.hash(value);
+      if (!this.bitArray.get(id)) {
+        exists = false;
+      }
+    }
+    return exists;
+  }
 }

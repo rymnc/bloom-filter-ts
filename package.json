@@ -2,8 +2,9 @@
   "name": "bloom-filter",
   "version": "1.0.0",
   "description": "Bloom Filter implementation in TypeScript",
-  "main": "lib/sdk.js",
+  "main": "dist/sdk.js",
   "scripts": {
+    "build": "tsc",
     "test": "mocha -r ts-node/register test/*.spec.ts",
     "lint": "prettier --write lib/*.ts",
     "prepare": "husky install"
@@ -22,6 +23,7 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
+    "decimal.js": "^10.3.1",
     "husky": "^7.0.1"
   },
   "lint-staged": {

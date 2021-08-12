@@ -1,3 +1,5 @@
+import { Decimal } from "decimal.js";
+
 export class BitArray {
   vector: Uint32Array;
   size: number;
@@ -45,4 +47,19 @@ export class BitArray {
   public get length(): number {
     return this.size;
   }
+}
+
+export function getK(m: number, n: number): number {
+  const decM = new Decimal(m);
+  const decN = new Decimal(n);
+  return Math.floor(decM.div(decN).mul(Math.log(2)).toNumber());
+}
+
+export function getError(k: number, m: number, n: number): Decimal {
+  const decM = new Decimal(m);
+  const decN = new Decimal(n);
+  const decK = new Decimal(k);
+  const power = decK.mul(-decN).div(decM);
+  const base = new Decimal(1).sub(Decimal.exp(1).pow(power));
+  return Decimal.pow(base, decK);
 }
