@@ -21,11 +21,11 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `k`  | `number` |
-| `m`  | `number` |
-| `n`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `k` | `number` |
+| `m` | `number` |
+| `n` | `number` |
 
 #### Returns
 
@@ -33,9 +33,9 @@
 
 #### Defined in
 
-[utils.ts:58](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/utils.ts#L58)
+[utils.ts:58](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/utils.ts#L58)
 
----
+___
 
 ### getK
 
@@ -43,10 +43,10 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `m`  | `number` |
-| `n`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `m` | `number` |
+| `n` | `number` |
 
 #### Returns
 
@@ -54,4 +54,4 @@
 
 #### Defined in
 
-[utils.ts:52](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/utils.ts#L52)
+[utils.ts:52](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/utils.ts#L52)

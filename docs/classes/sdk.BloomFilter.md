@@ -6,8 +6,8 @@
 
 ## Type parameters
 
-| Name   | Type     |
-| :----- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `Type` | `string` |
 
 ## Table of contents
@@ -37,22 +37,22 @@
 
 #### Type parameters
 
-| Name   | Type     |
-| :----- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `Type` | `string` |
 
 #### Parameters
 
-| Name               | Type                                                                     |
-| :----------------- | :----------------------------------------------------------------------- |
-| `m`                | `number`                                                                 |
-| `n`                | `number`                                                                 |
-| `permittedError`   | `Decimal`                                                                |
+| Name | Type |
+| :------ | :------ |
+| `m` | `number` |
+| `n` | `number` |
+| `permittedError` | `Decimal` |
 | `hashingFunctions` | [`HashingFunctions`](../interfaces/types.HashingFunctions.md)<`Type`\>[] |
 
 #### Defined in
 
-[sdk.ts:12](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/sdk.ts#L12)
+[sdk.ts:12](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/sdk.ts#L12)
 
 ## Properties
 
@@ -62,9 +62,9 @@
 
 #### Defined in
 
-[sdk.ts:9](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/sdk.ts#L9)
+[sdk.ts:9](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/sdk.ts#L9)
 
----
+___
 
 ### hashingFunctions
 
@@ -72,9 +72,9 @@
 
 #### Defined in
 
-[sdk.ts:10](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/sdk.ts#L10)
+[sdk.ts:10](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/sdk.ts#L10)
 
----
+___
 
 ### k
 
@@ -82,9 +82,9 @@
 
 #### Defined in
 
-[sdk.ts:6](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/sdk.ts#L6)
+[sdk.ts:6](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/sdk.ts#L6)
 
----
+___
 
 ### m
 
@@ -92,9 +92,9 @@
 
 #### Defined in
 
-[sdk.ts:7](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/sdk.ts#L7)
+[sdk.ts:7](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/sdk.ts#L7)
 
----
+___
 
 ### n
 
@@ -102,7 +102,7 @@
 
 #### Defined in
 
-[sdk.ts:8](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/sdk.ts#L8)
+[sdk.ts:8](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/sdk.ts#L8)
 
 ## Methods
 
@@ -112,8 +112,8 @@
 
 #### Parameters
 
-| Name    | Type   |
-| :------ | :----- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `Type` |
 
 #### Returns
@@ -122,9 +122,9 @@
 
 #### Defined in
 
-[sdk.ts:33](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/sdk.ts#L33)
+[sdk.ts:33](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/sdk.ts#L33)
 
----
+___
 
 ### exists
 
@@ -132,8 +132,8 @@
 
 #### Parameters
 
-| Name    | Type   |
-| :------ | :----- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `Type` |
 
 #### Returns
@@ -142,4 +142,4 @@
 
 #### Defined in
 
-[sdk.ts:40](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/sdk.ts#L40)
+[sdk.ts:40](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/sdk.ts#L40)

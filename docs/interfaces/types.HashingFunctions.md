@@ -6,8 +6,8 @@
 
 ## Type parameters
 
-| Name   |
-| :----- |
+| Name |
+| :------ |
 | `Type` |
 
 ## Table of contents
@@ -26,8 +26,8 @@ Should accept a string and return an id
 
 #### Parameters
 
-| Name  | Type   |
-| :---- | :----- |
+| Name | Type |
+| :------ | :------ |
 | `key` | `Type` |
 
 #### Returns
@@ -36,4 +36,4 @@ Should accept a string and return an id
 
 #### Defined in
 
-[types.ts:5](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/types.ts#L5)
+[types.ts:5](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/types.ts#L5)

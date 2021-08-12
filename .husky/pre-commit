@@ -2,4 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npx lint-staged
-yarn docgen
+yarn docgen && git add docs/
+

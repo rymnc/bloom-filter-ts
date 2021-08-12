@@ -35,13 +35,13 @@ Constructor
 
 #### Parameters
 
-| Name   | Type     |
-| :----- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `size` | `number` |
 
 #### Defined in
 
-[utils.ts:11](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/utils.ts#L11)
+[utils.ts:11](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/utils.ts#L11)
 
 ## Properties
 
@@ -51,9 +51,9 @@ Constructor
 
 #### Defined in
 
-[utils.ts:5](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/utils.ts#L5)
+[utils.ts:5](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/utils.ts#L5)
 
----
+___
 
 ### vector
 
@@ -61,7 +61,7 @@ Constructor
 
 #### Defined in
 
-[utils.ts:4](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/utils.ts#L4)
+[utils.ts:4](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/utils.ts#L4)
 
 ## Accessors
 
@@ -75,7 +75,7 @@ Constructor
 
 #### Defined in
 
-[utils.ts:47](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/utils.ts#L47)
+[utils.ts:47](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/utils.ts#L47)
 
 ## Methods
 
@@ -87,8 +87,8 @@ Clear the bit at the index
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `index` | `number` |
 
 #### Returns
@@ -97,9 +97,9 @@ Clear the bit at the index
 
 #### Defined in
 
-[utils.ts:30](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/utils.ts#L30)
+[utils.ts:30](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/utils.ts#L30)
 
----
+___
 
 ### get
 
@@ -109,8 +109,8 @@ Get the bit at the index
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `index` | `number` |
 
 #### Returns
@@ -121,9 +121,9 @@ boolean
 
 #### Defined in
 
-[utils.ts:41](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/utils.ts#L41)
+[utils.ts:41](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/utils.ts#L41)
 
----
+___
 
 ### set
 
@@ -133,8 +133,8 @@ Set a bit at the index
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `index` | `number` |
 
 #### Returns
@@ -143,4 +143,4 @@ Set a bit at the index
 
 #### Defined in
 
-[utils.ts:20](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/utils.ts#L20)
+[utils.ts:20](https://github.com/rymnc/bloom-filter-ts/blob/dfdd230/lib/utils.ts#L20)
