@@ -1,3 +1,3 @@
 export interface HashingFunctions {
-    hash: (str: string | Buffer) => number;
+  hash: (str: string | Buffer) => number;
 }

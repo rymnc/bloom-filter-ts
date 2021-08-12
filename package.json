@@ -5,6 +5,7 @@
   "main": "lib/sdk.js",
   "scripts": {
     "test": "mocha",
+    "lint": "prettier --write lib/*.ts",
     "prepare": "husky install"
   },
   "author": "rymnc <aaryamannchallani7@gmail.com> (https://rymnc.com/)",
