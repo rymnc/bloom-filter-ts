@@ -4,7 +4,7 @@
   "description": "Bloom Filter implementation in TypeScript",
   "main": "lib/sdk.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha -r ts-node/register test/*.spec.ts",
     "lint": "prettier --write lib/*.ts",
     "prepare": "husky install"
   },
@@ -18,12 +18,13 @@
     "lint-staged": ">=10",
     "mocha": "^9.0.3",
     "prettier": "^2.3.2",
+    "ts-node": "^10.2.0",
     "typescript": "^4.3.5"
   },
   "dependencies": {
     "husky": "^7.0.1"
   },
   "lint-staged": {
-    "*.{js,css,md}": "prettier --write"
+    "*.{ts,css,md}": "prettier --write"
   }
 }

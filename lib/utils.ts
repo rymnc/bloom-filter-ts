@@ -1,11 +1,13 @@
 export class BitArray {
-  private vector: Uint32Array;
+  vector: Uint32Array;
+  size: number;
 
   /**
    * Constructor
    * @param size
    */
   constructor(size: number) {
+    this.size = size;
     this.vector = new Uint32Array(Math.ceil(size / 32));
   }
 
@@ -38,5 +40,9 @@ export class BitArray {
     const bigI = Math.floor(index / 32);
     const smallI = index % 32;
     return (this.vector[bigI] & (1 << smallI)) !== 0;
+  }
+
+  public get length(): number {
+    return this.size;
   }
 }
