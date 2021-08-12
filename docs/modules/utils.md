@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[utils.ts:58](https://github.com/rymnc/bloom-filter-ts/blob/09356be/lib/utils.ts#L58)
+[utils.ts:58](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/utils.ts#L58)
 
 ---
 
@@ -54,4 +54,4 @@
 
 #### Defined in
 
-[utils.ts:52](https://github.com/rymnc/bloom-filter-ts/blob/09356be/lib/utils.ts#L52)
+[utils.ts:52](https://github.com/rymnc/bloom-filter-ts/blob/e84853a/lib/utils.ts#L52)
