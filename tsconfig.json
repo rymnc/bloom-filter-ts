@@ -18,9 +18,13 @@
       "lib": [
         "esnext"
       ],
-      "outDir": "dist"
+      "outDir": "dist",      
+    },
+    "typedocOptions": {
+        "entryPoints": ["./lib/sdk.ts", "./lib/utils.ts", "./lib/types.ts"],
+        "out": "docs"
     },
     "include": [
         "lib/*.ts"
-    ]
+    ],
   }
