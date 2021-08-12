@@ -2,7 +2,7 @@ import Decimal from "decimal.js";
 import { HashingFunctions } from "./types";
 import { BitArray, getError, getK } from "./utils";
 
-export class BloomFilter<Type = string> {
+class BloomFilter<Type = string> {
   k: number;
   m: number;
   n: number;
@@ -48,3 +48,5 @@ export class BloomFilter<Type = string> {
     return exists;
   }
 }
+
+export { BitArray, HashingFunctions, getError, getK, BloomFilter };
