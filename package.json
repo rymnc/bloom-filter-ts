@@ -1,0 +1,28 @@
+{
+  "name": "bloom-filter",
+  "version": "1.0.0",
+  "description": "Bloom Filter implementation in TypeScript",
+  "main": "lib/sdk.js",
+  "scripts": {
+    "test": "mocha",
+    "prepare": "husky install"
+  },
+  "author": "rymnc <aaryamannchallani7@gmail.com> (https://rymnc.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.6.0",
+    "chai": "^4.3.4",
+    "lint-staged": ">=10",
+    "mocha": "^9.0.3",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "husky": "^7.0.1"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
