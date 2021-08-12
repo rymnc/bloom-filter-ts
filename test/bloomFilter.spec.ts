@@ -16,7 +16,7 @@ const hashTwo: HashingFunctions<string> = {
   },
 };
 
-describe.only("Bloom Filter", () => {
+describe("Bloom Filter", () => {
   it("should create a new Bloom Filter", () => {
     const bf = new BloomFilter<string>(256, 12, new Decimal("0.001"), [
       hashOne,
