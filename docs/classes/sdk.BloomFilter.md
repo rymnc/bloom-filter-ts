@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[sdk.ts:12](https://github.com/rymnc/bloom-filter-ts/blob/16e3ce3/lib/sdk.ts#L12)
+[sdk.ts:18](https://github.com/rymnc/bloom-filter-ts/blob/46cf824/lib/sdk.ts#L18)
 
 ## Properties
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[sdk.ts:9](https://github.com/rymnc/bloom-filter-ts/blob/16e3ce3/lib/sdk.ts#L9)
+[sdk.ts:15](https://github.com/rymnc/bloom-filter-ts/blob/46cf824/lib/sdk.ts#L15)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[sdk.ts:10](https://github.com/rymnc/bloom-filter-ts/blob/16e3ce3/lib/sdk.ts#L10)
+[sdk.ts:16](https://github.com/rymnc/bloom-filter-ts/blob/46cf824/lib/sdk.ts#L16)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[sdk.ts:6](https://github.com/rymnc/bloom-filter-ts/blob/16e3ce3/lib/sdk.ts#L6)
+[sdk.ts:12](https://github.com/rymnc/bloom-filter-ts/blob/46cf824/lib/sdk.ts#L12)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[sdk.ts:7](https://github.com/rymnc/bloom-filter-ts/blob/16e3ce3/lib/sdk.ts#L7)
+[sdk.ts:13](https://github.com/rymnc/bloom-filter-ts/blob/46cf824/lib/sdk.ts#L13)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[sdk.ts:8](https://github.com/rymnc/bloom-filter-ts/blob/16e3ce3/lib/sdk.ts#L8)
+[sdk.ts:14](https://github.com/rymnc/bloom-filter-ts/blob/46cf824/lib/sdk.ts#L14)
 
 ## Methods
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[sdk.ts:33](https://github.com/rymnc/bloom-filter-ts/blob/16e3ce3/lib/sdk.ts#L33)
+[sdk.ts:39](https://github.com/rymnc/bloom-filter-ts/blob/46cf824/lib/sdk.ts#L39)
 
 ___
 
@@ -142,4 +142,4 @@ ___
 
 #### Defined in
 
-[sdk.ts:41](https://github.com/rymnc/bloom-filter-ts/blob/16e3ce3/lib/sdk.ts#L41)
+[sdk.ts:47](https://github.com/rymnc/bloom-filter-ts/blob/46cf824/lib/sdk.ts#L47)

@@ -13,6 +13,7 @@
 - [generateHashingFunction](utils.md#generatehashingfunction)
 - [getError](utils.md#geterror)
 - [getK](utils.md#getk)
+- [getKandM](utils.md#getkandm)
 
 ## Functions
 
@@ -32,7 +33,7 @@
 
 #### Defined in
 
-[utils.ts:69](https://github.com/rymnc/bloom-filter-ts/blob/16e3ce3/lib/utils.ts#L69)
+[utils.ts:83](https://github.com/rymnc/bloom-filter-ts/blob/46cf824/lib/utils.ts#L83)
 
 ___
 
@@ -54,7 +55,7 @@ ___
 
 #### Defined in
 
-[utils.ts:60](https://github.com/rymnc/bloom-filter-ts/blob/16e3ce3/lib/utils.ts#L60)
+[utils.ts:74](https://github.com/rymnc/bloom-filter-ts/blob/46cf824/lib/utils.ts#L74)
 
 ___
 
@@ -75,4 +76,31 @@ ___
 
 #### Defined in
 
-[utils.ts:54](https://github.com/rymnc/bloom-filter-ts/blob/16e3ce3/lib/utils.ts#L54)
+[utils.ts:54](https://github.com/rymnc/bloom-filter-ts/blob/46cf824/lib/utils.ts#L54)
+
+___
+
+### getKandM
+
+▸ **getKandM**(`n`, `permittedError`, `step?`): `Object`
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `n` | `number` | `undefined` |
+| `permittedError` | `Decimal` | `undefined` |
+| `step` | `number` | `1` |
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `k` | `number` |
+| `m` | `number` |
+
+#### Defined in
+
+[utils.ts:60](https://github.com/rymnc/bloom-filter-ts/blob/46cf824/lib/utils.ts#L60)

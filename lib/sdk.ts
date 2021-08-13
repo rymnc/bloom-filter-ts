@@ -1,6 +1,12 @@
 import Decimal from "decimal.js";
 import { HashingFunction } from "./types";
-import { BitArray, generateHashingFunction, getError, getK } from "./utils";
+import {
+  BitArray,
+  generateHashingFunction,
+  getError,
+  getK,
+  getKandM,
+} from "./utils";
 
 class BloomFilter<Type = string> {
   k: number;
@@ -56,17 +62,12 @@ function generateBloomFilter<Type = string>(
   permittedError: Decimal,
   step: number = 1
 ): BloomFilter<Type> {
-  for (let m = 1; ; m += step) {
-    const k = getK(m, n);
-    const error = getError(k, m, n);
-    if (error.lte(permittedError)) {
-      const hashingFunctions: Array<HashingFunction<Type>> = [];
-      for (let i = 0; i < k; i++) {
-        hashingFunctions.push(generateHashingFunction<Type>());
-      }
-      return new BloomFilter<Type>(m, n, permittedError, hashingFunctions);
-    }
+  const { k, m } = getKandM(n, permittedError, step);
+  const hashingFunctions: Array<HashingFunction<Type>> = [];
+  for (let i = 0; i < k; i++) {
+    hashingFunctions.push(generateHashingFunction<Type>());
   }
+  return new BloomFilter<Type>(m, n, permittedError, hashingFunctions);
 }
 
 export {

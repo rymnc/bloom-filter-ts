@@ -57,6 +57,20 @@ export function getK(m: number, n: number): number {
   return Math.floor(decM.div(decN).mul(Math.log(2)).toNumber());
 }
 
+export function getKandM(
+  n: number,
+  permittedError: Decimal,
+  step: number = 1
+): { k: number; m: number } {
+  for (let m = 1; ; m += step) {
+    const k = getK(m, n);
+    const error = getError(k, m, n);
+    if (error.lte(permittedError)) {
+      return { k, m };
+    }
+  }
+}
+
 export function getError(k: number, m: number, n: number): Decimal {
   const decM = new Decimal(m);
   const decN = new Decimal(n);
