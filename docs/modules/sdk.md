@@ -76,4 +76,4 @@ Re-exports: [getK](utils.md#getk)
 
 #### Defined in
 
-[sdk.ts:60](https://github.com/rymnc/bloom-filter-ts/blob/7592d1c/lib/sdk.ts#L60)
+[sdk.ts:60](https://github.com/rymnc/bloom-filter-ts/blob/1e2146f/lib/sdk.ts#L60)
