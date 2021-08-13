@@ -80,14 +80,21 @@ export function getError(k: number, m: number, n: number): Decimal {
   return Decimal.pow(base, decK);
 }
 
-export function generateHashingFunction<
-  Type = string
->(): HashingFunction<Type> {
+export function generateHashingFunction<Type = string>(
+  m: number
+): HashingFunction<Type> {
+  const decM = new Decimal(m);
   const random = Math.random() * Math.floor(Math.pow(10, 12));
   return {
     hash: function (v: Type) {
       const d = murmur(String(v), random);
-      return Math.floor(d / Math.pow(10, d.toString().length - 1));
+      if (new Decimal(d).lte(decM)) return d;
+      const numLength = d.toString().length;
+      for (let i = m; i >= 1; i--) {
+        const v = Math.floor(d / Math.pow(10, numLength - i));
+        if (new Decimal(v).lte(decM)) return v;
+      }
+      throw new Error("Could not generate bitPosition");
     },
   };
 }

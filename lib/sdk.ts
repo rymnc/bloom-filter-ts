@@ -65,7 +65,7 @@ function generateBloomFilter<Type = string>(
   const { k, m } = getKandM(n, permittedError, step);
   const hashingFunctions: Array<HashingFunction<Type>> = [];
   for (let i = 0; i < k; i++) {
-    hashingFunctions.push(generateHashingFunction<Type>());
+    hashingFunctions.push(generateHashingFunction<Type>(m));
   }
   return new BloomFilter<Type>(m, n, permittedError, hashingFunctions);
 }
