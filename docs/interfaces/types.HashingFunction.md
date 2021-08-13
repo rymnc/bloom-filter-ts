@@ -36,4 +36,4 @@ Should accept a string and return an id
 
 #### Defined in
 
-[types.ts:5](https://github.com/rymnc/bloom-filter-ts/blob/62b3fce/lib/types.ts#L5)
+[types.ts:5](https://github.com/rymnc/bloom-filter-ts/blob/faec485/lib/types.ts#L5)
