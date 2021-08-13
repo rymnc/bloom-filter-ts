@@ -33,5 +33,10 @@
   },
   "lint-staged": {
     "*.{ts,css,md}": "prettier --write"
-  }
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/rymnc/bloom-filter-ts"
+  },
+  "readme": "https://github.com/rymnc/bloom-filter-ts/blob/main/docs/README.md"
 }
