@@ -48,11 +48,11 @@
 | `m` | `number` |
 | `n` | `number` |
 | `permittedError` | `Decimal` |
-| `hashingFunctions` | [`HashingFunctions`](../interfaces/types.HashingFunctions.md)<`Type`\>[] |
+| `hashingFunctions` | [`HashingFunction`](../interfaces/types.HashingFunction.md)<`Type`\>[] |
 
 #### Defined in
 
-[sdk.ts:12](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/sdk.ts#L12)
+[sdk.ts:12](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/sdk.ts#L12)
 
 ## Properties
 
@@ -62,17 +62,17 @@
 
 #### Defined in
 
-[sdk.ts:9](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/sdk.ts#L9)
+[sdk.ts:9](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/sdk.ts#L9)
 
 ___
 
 ### hashingFunctions
 
-• **hashingFunctions**: [`HashingFunctions`](../interfaces/types.HashingFunctions.md)<`Type`\>[]
+• **hashingFunctions**: [`HashingFunction`](../interfaces/types.HashingFunction.md)<`Type`\>[]
 
 #### Defined in
 
-[sdk.ts:10](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/sdk.ts#L10)
+[sdk.ts:10](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/sdk.ts#L10)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[sdk.ts:6](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/sdk.ts#L6)
+[sdk.ts:6](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/sdk.ts#L6)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[sdk.ts:7](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/sdk.ts#L7)
+[sdk.ts:7](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/sdk.ts#L7)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[sdk.ts:8](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/sdk.ts#L8)
+[sdk.ts:8](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/sdk.ts#L8)
 
 ## Methods
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[sdk.ts:33](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/sdk.ts#L33)
+[sdk.ts:33](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/sdk.ts#L33)
 
 ___
 
@@ -142,4 +142,4 @@ ___
 
 #### Defined in
 
-[sdk.ts:40](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/sdk.ts#L40)
+[sdk.ts:41](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/sdk.ts#L41)

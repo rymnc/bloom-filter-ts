@@ -1,19 +1,19 @@
 import Decimal from "decimal.js";
-import { HashingFunctions } from "./types";
-import { BitArray, getError, getK } from "./utils";
+import { HashingFunction } from "./types";
+import { BitArray, generateHashingFunction, getError, getK } from "./utils";
 
 class BloomFilter<Type = string> {
   k: number;
   m: number;
   n: number;
   bitArray: BitArray;
-  hashingFunctions: Array<HashingFunctions<Type>>;
+  hashingFunctions: Array<HashingFunction<Type>>;
 
   constructor(
     m: number,
     n: number,
     permittedError: Decimal = new Decimal(0.015),
-    hashingFunctions: Array<HashingFunctions<Type>>
+    hashingFunctions: Array<HashingFunction<Type>>
   ) {
     this.m = m;
     this.n = n;
@@ -33,12 +33,14 @@ class BloomFilter<Type = string> {
   add(value: Type): void {
     for (const hf of this.hashingFunctions) {
       const id = hf.hash(value);
+
       this.bitArray.set(id);
     }
   }
 
   exists(value: Type): boolean {
     let exists = true;
+
     for (const hf of this.hashingFunctions) {
       const id = hf.hash(value);
       if (!this.bitArray.get(id)) {
@@ -49,4 +51,29 @@ class BloomFilter<Type = string> {
   }
 }
 
-export { BitArray, HashingFunctions, getError, getK, BloomFilter };
+function generateBloomFilter<Type = string>(
+  n: number,
+  permittedError: Decimal,
+  step: number = 1
+): BloomFilter<Type> {
+  for (let m = 1; ; m += step) {
+    const k = getK(m, n);
+    const error = getError(k, m, n);
+    if (error.lte(permittedError)) {
+      const hashingFunctions: Array<HashingFunction<Type>> = [];
+      for (let i = 0; i < k; i++) {
+        hashingFunctions.push(generateHashingFunction<Type>());
+      }
+      return new BloomFilter<Type>(m, n, permittedError, hashingFunctions);
+    }
+  }
+}
+
+export {
+  BitArray,
+  HashingFunction,
+  getError,
+  getK,
+  BloomFilter,
+  generateBloomFilter,
+};

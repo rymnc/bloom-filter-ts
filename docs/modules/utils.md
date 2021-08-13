@@ -10,10 +10,31 @@
 
 ### Functions
 
+- [generateHashingFunction](utils.md#generatehashingfunction)
 - [getError](utils.md#geterror)
 - [getK](utils.md#getk)
 
 ## Functions
+
+### generateHashingFunction
+
+▸ **generateHashingFunction**<`Type`\>(): [`HashingFunction`](../interfaces/types.HashingFunction.md)<`Type`\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `Type` | `string` |
+
+#### Returns
+
+[`HashingFunction`](../interfaces/types.HashingFunction.md)<`Type`\>
+
+#### Defined in
+
+[utils.ts:69](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/utils.ts#L69)
+
+___
 
 ### getError
 
@@ -33,7 +54,7 @@
 
 #### Defined in
 
-[utils.ts:58](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/utils.ts#L58)
+[utils.ts:60](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/utils.ts#L60)
 
 ___
 
@@ -54,4 +75,4 @@ ___
 
 #### Defined in
 
-[utils.ts:52](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/utils.ts#L52)
+[utils.ts:54](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/utils.ts#L54)

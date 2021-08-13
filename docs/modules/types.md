@@ -6,4 +6,4 @@
 
 ### Interfaces
 
-- [HashingFunctions](../interfaces/types.HashingFunctions.md)
+- [HashingFunction](../interfaces/types.HashingFunction.md)

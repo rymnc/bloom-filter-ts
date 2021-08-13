@@ -7,13 +7,17 @@
 ### References
 
 - [BitArray](sdk.md#bitarray)
-- [HashingFunctions](sdk.md#hashingfunctions)
+- [HashingFunction](sdk.md#hashingfunction)
 - [getError](sdk.md#geterror)
 - [getK](sdk.md#getk)
 
 ### Classes
 
 - [BloomFilter](../classes/sdk.BloomFilter.md)
+
+### Functions
+
+- [generateBloomFilter](sdk.md#generatebloomfilter)
 
 ## References
 
@@ -23,9 +27,9 @@ Re-exports: [BitArray](../classes/utils.BitArray.md)
 
 ___
 
-### HashingFunctions
+### HashingFunction
 
-Re-exports: [HashingFunctions](../interfaces/types.HashingFunctions.md)
+Re-exports: [HashingFunction](../interfaces/types.HashingFunction.md)
 
 ___
 
@@ -38,3 +42,31 @@ ___
 ### getK
 
 Re-exports: [getK](utils.md#getk)
+
+## Functions
+
+### generateBloomFilter
+
+▸ **generateBloomFilter**<`Type`\>(`n`, `permittedError`, `step?`): [`BloomFilter`](../classes/sdk.BloomFilter.md)<`Type`\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `Type` | `string` |
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `n` | `number` | `undefined` |
+| `permittedError` | `Decimal` | `undefined` |
+| `step` | `number` | `1` |
+
+#### Returns
+
+[`BloomFilter`](../classes/sdk.BloomFilter.md)<`Type`\>
+
+#### Defined in
+
+[sdk.ts:54](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/sdk.ts#L54)

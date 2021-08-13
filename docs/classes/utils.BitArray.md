@@ -41,7 +41,7 @@ Constructor
 
 #### Defined in
 
-[utils.ts:11](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/utils.ts#L11)
+[utils.ts:13](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/utils.ts#L13)
 
 ## Properties
 
@@ -51,7 +51,7 @@ Constructor
 
 #### Defined in
 
-[utils.ts:5](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/utils.ts#L5)
+[utils.ts:7](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/utils.ts#L7)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[utils.ts:4](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/utils.ts#L4)
+[utils.ts:6](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/utils.ts#L6)
 
 ## Accessors
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[utils.ts:47](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/utils.ts#L47)
+[utils.ts:49](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/utils.ts#L49)
 
 ## Methods
 
@@ -97,7 +97,7 @@ Clear the bit at the index
 
 #### Defined in
 
-[utils.ts:30](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/utils.ts#L30)
+[utils.ts:32](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/utils.ts#L32)
 
 ___
 
@@ -121,7 +121,7 @@ boolean
 
 #### Defined in
 
-[utils.ts:41](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/utils.ts#L41)
+[utils.ts:43](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/utils.ts#L43)
 
 ___
 
@@ -143,4 +143,4 @@ Set a bit at the index
 
 #### Defined in
 
-[utils.ts:20](https://github.com/rymnc/bloom-filter-ts/blob/cc38a72/lib/utils.ts#L20)
+[utils.ts:22](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/utils.ts#L22)

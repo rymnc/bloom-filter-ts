@@ -1,4 +1,4 @@
-export interface HashingFunctions<Type> {
+export interface HashingFunction<Type> {
   /**
    * Should accept a string and return an id
    */

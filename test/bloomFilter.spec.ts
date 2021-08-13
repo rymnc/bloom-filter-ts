@@ -1,23 +1,36 @@
 import { expect } from "chai";
 import { BloomFilter } from "../lib/sdk";
 import "mocha";
-import { HashingFunctions } from "../lib/types";
+import { HashingFunction } from "../lib/types";
 import Decimal from "decimal.js";
+import murmur from "murmurhash-js";
 
-const hashOne: HashingFunctions<string> = {
+const hashOne: HashingFunction<string> = {
   hash: function (v: string) {
-    return 1;
+    const d = murmur(v, 28396517935629984);
+    const digit = Math.floor(d / Math.pow(10, d.toString().length - 1));
+    return digit;
   },
 };
 
-const hashTwo: HashingFunctions<string> = {
+const hashTwo: HashingFunction<string> = {
   hash: function (v: string) {
-    return 2;
+    const d = murmur(v, 298332974657598);
+    const digit = Math.floor(d / Math.pow(10, d.toString().length - 1));
+    return digit;
+  },
+};
+
+const hashThree: HashingFunction<string> = {
+  hash: function (v: string) {
+    const d = murmur(v, 29837892574897598);
+    const digit = Math.floor(d / Math.pow(10, d.toString().length - 1));
+    return digit;
   },
 };
 
 describe("Bloom Filter", () => {
-  it("should create a new Bloom Filter", () => {
+  it("Should create a new Bloom Filter", () => {
     const bf = new BloomFilter<string>(256, 12, new Decimal("0.001"), [
       hashOne,
       hashTwo,
@@ -26,7 +39,7 @@ describe("Bloom Filter", () => {
     expect(bf.bitArray.length).to.eql(256);
   });
 
-  it("should throw when permitted error < found error", () => {
+  it("Should throw when permitted error < found error", () => {
     let err;
     try {
       new BloomFilter<string>(256, 12, new Decimal("0.00001"), [
@@ -39,7 +52,7 @@ describe("Bloom Filter", () => {
     expect(err).to.not.be.undefined;
   });
 
-  it("should throw when too many hashing functions are passed in", () => {
+  it("Should throw when too many hashing functions are passed in", () => {
     let err;
     try {
       // for the below parameters
@@ -50,5 +63,15 @@ describe("Bloom Filter", () => {
       err = e;
     }
     expect(err).to.not.be.undefined;
+  });
+
+  it("Should add element to the filter", () => {
+    const bf = new BloomFilter<string>(64, 12, new Decimal(0.08), [
+      hashOne,
+      hashTwo,
+      hashThree,
+    ]);
+    bf.add("foo");
+    expect(bf.exists("foo")).to.eql(true);
   });
 });

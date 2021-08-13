@@ -1,4 +1,6 @@
 import { Decimal } from "decimal.js";
+import murmur from "murmurhash-js/murmurhash2_gc";
+import { HashingFunction } from "./types";
 
 export class BitArray {
   vector: Uint32Array;
@@ -62,4 +64,16 @@ export function getError(k: number, m: number, n: number): Decimal {
   const power = decK.mul(-decN).div(decM);
   const base = new Decimal(1).sub(Decimal.exp(1).pow(power));
   return Decimal.pow(base, decK);
+}
+
+export function generateHashingFunction<
+  Type = string
+>(): HashingFunction<Type> {
+  const random = Math.random() * Math.floor(Math.pow(10, 12));
+  return {
+    hash: function (v: Type) {
+      const d = murmur(String(v), random);
+      return Math.floor(d / Math.pow(10, d.toString().length - 1));
+    },
+  };
 }
