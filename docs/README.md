@@ -44,7 +44,7 @@ There are multiple ways you can create the bloom filter according to your requir
 
    `error`: % of false positives returned
 
-   Use this to check if your k, m, n values are OK
+   _Use this to check if your k, m, n values are OK_
 
    Javascript/Typescript:
 
@@ -56,7 +56,7 @@ There are multiple ways you can create the bloom filter according to your requir
 
    The hashing function returned works on the murmur algorithm
 
-   It is recommended to bring other algorithms as well to improve robustness
+   _It is recommended to bring other algorithms as well to improve robustness_
 
    Javascript:
 
