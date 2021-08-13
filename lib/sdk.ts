@@ -76,4 +76,5 @@ export {
   getK,
   BloomFilter,
   generateBloomFilter,
+  generateHashingFunction,
 };

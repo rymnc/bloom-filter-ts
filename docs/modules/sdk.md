@@ -8,6 +8,7 @@
 
 - [BitArray](sdk.md#bitarray)
 - [HashingFunction](sdk.md#hashingfunction)
+- [generateHashingFunction](sdk.md#generatehashingfunction)
 - [getError](sdk.md#geterror)
 - [getK](sdk.md#getk)
 
@@ -30,6 +31,12 @@ ___
 ### HashingFunction
 
 Re-exports: [HashingFunction](../interfaces/types.HashingFunction.md)
+
+___
+
+### generateHashingFunction
+
+Re-exports: [generateHashingFunction](utils.md#generatehashingfunction)
 
 ___
 
@@ -69,4 +76,4 @@ Re-exports: [getK](utils.md#getk)
 
 #### Defined in
 
-[sdk.ts:54](https://github.com/rymnc/bloom-filter-ts/blob/b41eb9f/lib/sdk.ts#L54)
+[sdk.ts:54](https://github.com/rymnc/bloom-filter-ts/blob/16e3ce3/lib/sdk.ts#L54)
