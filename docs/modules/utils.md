@@ -1,4 +1,4 @@
-[bloom-filter](../README.md) / [Modules](../modules.md) / utils
+[bloom-filter-ts](../README.md) / [Modules](../modules.md) / utils
 
 # Module: utils
 
@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[utils.ts:83](https://github.com/rymnc/bloom-filter-ts/blob/faec485/lib/utils.ts#L83)
+[utils.ts:83](https://github.com/rymnc/bloom-filter-ts/blob/3bb566a/lib/utils.ts#L83)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[utils.ts:74](https://github.com/rymnc/bloom-filter-ts/blob/faec485/lib/utils.ts#L74)
+[utils.ts:74](https://github.com/rymnc/bloom-filter-ts/blob/3bb566a/lib/utils.ts#L74)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[utils.ts:54](https://github.com/rymnc/bloom-filter-ts/blob/faec485/lib/utils.ts#L54)
+[utils.ts:54](https://github.com/rymnc/bloom-filter-ts/blob/3bb566a/lib/utils.ts#L54)
 
 ___
 
@@ -103,4 +103,4 @@ ___
 
 #### Defined in
 
-[utils.ts:60](https://github.com/rymnc/bloom-filter-ts/blob/faec485/lib/utils.ts#L60)
+[utils.ts:60](https://github.com/rymnc/bloom-filter-ts/blob/3bb566a/lib/utils.ts#L60)

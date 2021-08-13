@@ -1,4 +1,4 @@
-[bloom-filter](../README.md) / [Modules](../modules.md) / types
+[bloom-filter-ts](../README.md) / [Modules](../modules.md) / types
 
 # Module: types
 

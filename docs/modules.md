@@ -1,6 +1,6 @@
-[bloom-filter](README.md) / Modules
+[bloom-filter-ts](README.md) / Modules
 
-# bloom-filter
+# bloom-filter-ts
 
 ## Table of contents
 

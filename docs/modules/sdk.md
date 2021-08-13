@@ -1,4 +1,4 @@
-[bloom-filter](../README.md) / [Modules](../modules.md) / sdk
+[bloom-filter-ts](../README.md) / [Modules](../modules.md) / sdk
 
 # Module: sdk
 
@@ -76,4 +76,4 @@ Re-exports: [getK](utils.md#getk)
 
 #### Defined in
 
-[sdk.ts:60](https://github.com/rymnc/bloom-filter-ts/blob/faec485/lib/sdk.ts#L60)
+[sdk.ts:60](https://github.com/rymnc/bloom-filter-ts/blob/3bb566a/lib/sdk.ts#L60)

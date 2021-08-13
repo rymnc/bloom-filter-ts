@@ -1,5 +1,5 @@
 {
-  "name": "bloom-filter",
+  "name": "bloom-filter-ts",
   "version": "1.0.0",
   "description": "Bloom Filter implementation in TypeScript",
   "main": "dist/sdk.js",

@@ -1,4 +1,4 @@
-[bloom-filter](../README.md) / [Modules](../modules.md) / [sdk](../modules/sdk.md) / BloomFilter
+[bloom-filter-ts](../README.md) / [Modules](../modules.md) / [sdk](../modules/sdk.md) / BloomFilter
 
 # Class: BloomFilter<Type\>
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[sdk.ts:18](https://github.com/rymnc/bloom-filter-ts/blob/faec485/lib/sdk.ts#L18)
+[sdk.ts:18](https://github.com/rymnc/bloom-filter-ts/blob/3bb566a/lib/sdk.ts#L18)
 
 ## Properties
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[sdk.ts:15](https://github.com/rymnc/bloom-filter-ts/blob/faec485/lib/sdk.ts#L15)
+[sdk.ts:15](https://github.com/rymnc/bloom-filter-ts/blob/3bb566a/lib/sdk.ts#L15)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[sdk.ts:16](https://github.com/rymnc/bloom-filter-ts/blob/faec485/lib/sdk.ts#L16)
+[sdk.ts:16](https://github.com/rymnc/bloom-filter-ts/blob/3bb566a/lib/sdk.ts#L16)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[sdk.ts:12](https://github.com/rymnc/bloom-filter-ts/blob/faec485/lib/sdk.ts#L12)
+[sdk.ts:12](https://github.com/rymnc/bloom-filter-ts/blob/3bb566a/lib/sdk.ts#L12)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[sdk.ts:13](https://github.com/rymnc/bloom-filter-ts/blob/faec485/lib/sdk.ts#L13)
+[sdk.ts:13](https://github.com/rymnc/bloom-filter-ts/blob/3bb566a/lib/sdk.ts#L13)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[sdk.ts:14](https://github.com/rymnc/bloom-filter-ts/blob/faec485/lib/sdk.ts#L14)
+[sdk.ts:14](https://github.com/rymnc/bloom-filter-ts/blob/3bb566a/lib/sdk.ts#L14)
 
 ## Methods
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[sdk.ts:39](https://github.com/rymnc/bloom-filter-ts/blob/faec485/lib/sdk.ts#L39)
+[sdk.ts:39](https://github.com/rymnc/bloom-filter-ts/blob/3bb566a/lib/sdk.ts#L39)
 
 ___
 
@@ -142,4 +142,4 @@ ___
 
 #### Defined in
 
-[sdk.ts:47](https://github.com/rymnc/bloom-filter-ts/blob/faec485/lib/sdk.ts#L47)
+[sdk.ts:47](https://github.com/rymnc/bloom-filter-ts/blob/3bb566a/lib/sdk.ts#L47)
